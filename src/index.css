@@ -3,11 +3,178 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 5vw;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.col-short img {
+  height: 30px;
+  margin: 0 auto;
+  width: auto
+} 
+.header-container {
+  display: flex;
+  background-color: #22c4ec;
+  color: white;
+  padding: 5px;
+}
+
+.list-container,
+.row {
+  display: flex;
+  padding: 5px;
+}
+
+.title {
+  font-family: Verdana, Geneva, sans-serif;
+}
+.text-grey {
+  color: gray;
+}
+.col-short {
+  width: 10%;
+}
+
+.col-long {
+  width: 25%;
+}
+.col-auto {
+  width: auto
+}
+
+.chart {
+  padding: 10px;
+  margin-top: 10px;
+}
+.center-text {
+  text-align: center;
+}
+.preview {
+  border-bottom: 2px solid #33D7FF;
+  padding-bottom: 30px;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  outline: 0;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+}
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+.modal-body .text {
+  margin-left: 5px;
+}
+.modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.btn-close {
+  display: inline-block;
+  background-color: #33D7FF;
+  color: #fff;
+  user-select: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+}
+.btn-close:not(:disabled):not(.disabled).active:focus, .btn-close:not(:disabled):not(.disabled):active:focus, .show>.btn-closebtn-close.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(83,196,245,.5);
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  
+  .col-short {
+    width: 25%;
+  }
+  
+  .col-long {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600){
+  body {
+    font-size: 12px;
+  }
+
+  .col-short {
+    width: 20%;
+  }
+  
+  .col-long {
+    width: 40%;
+  }
 }
